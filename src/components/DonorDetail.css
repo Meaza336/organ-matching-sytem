@@ -1,0 +1,31 @@
+/* General styles for the table */
+.table {
+    font-size: 0.9rem; /* Set smaller font size for the table */
+  }
+  
+  .table th, .table td {
+    padding: 8px; /* Adjust padding for table cells */
+  }
+  
+  .table th {
+    background-color: #5bc088; /* Green background for header */
+    color: white; /* White text color for header */
+  }
+  
+  /* Faded green background for the table */
+  .table-responsive {
+    background-color: rgba(91, 192, 136, 0.2); /* Faded green background */
+    padding: 15px; /* Add some padding around the table */
+    border-radius: 8px; /* Rounded corners for the background */
+  }
+  
+  
+  .sidebar .list-group-item {
+    font-size: 0.9rem; /* Smaller font size for sidebar items */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #F0FAF0; /* Match footer background color */
+    padding: 10px 0; /* Padding for footer */
+  }

@@ -1,0 +1,80 @@
+/* Overall container styling */
+.container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding-bottom: 80px; /* Add padding to prevent content overlap with footer */
+}
+
+/* Header styling */
+h1.h4 {
+    font-size: 1.2rem; /* Smaller size for the main header */
+}
+
+/* Form styling */
+.p-4 {
+    background-color: #f8f9fa; /* Light white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Animation for background color */
+}
+
+/* Header in the form */
+.bg-success {
+    background-color: #28a745; /* Success color for the header */
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+}
+
+/* Input and textarea styling */
+.form-control {
+    border: 1px solid #ced4da; /* Border color */
+    transition: border-color 0.3s ease; /* Animation for border color */
+}
+
+.form-control:focus {
+    border-color: #90ee90; /* Change border color on focus to light green */
+    box-shadow: 0 0 0 0.2rem rgba(144, 238, 144, 0.25); /* Light green focus shadow */
+}
+
+/* Button styling */
+.btn-success {
+    background-color: #28a745; /* Success button color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Animation for background color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker color on hover */
+}
+
+/* Footer styling */
+footer {
+    padding: 20px 0; /* Vertical padding for spacing */
+    text-align: center; /* Center the text */
+    font-size: 0.9rem; /* Font size */
+    color: #333; /* Text color */
+    margin-top: 40px; /* Space above the footer */
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8rem; /* Slightly smaller font size on mobile */
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+}
+/* Additional styles for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.p-4 {
+    animation: fadeIn 0.5s; /* Fade-in animation for the form */
+}

@@ -1,0 +1,202 @@
+html, body {
+  height: 100%; /* Ensure full height */
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 80px; /* Space for fixed header */
+}
+
+/* Header styles */
+header {
+  background-color: #c8e6c9; /* Header background color */
+  padding: 10px 20px;
+  width: 100%; /* Ensure header covers full width */
+  position: fixed; /* Fix position to the top */
+  top: 0; /* Aligns header to the top edge */
+  left: 0; /* Aligns header to the left edge */
+  z-index: 1000; /* Keeps header above other content */
+}
+
+header img {
+  width: 50px; /* Adjust logo size for visibility */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: normal; /* Set font weight */
+  color: #333; /* Text color */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+/* Search bar styles */
+input[type="text"] {
+  width: 300px; /* Fixed width for the search bar */
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(91, 192, 136, 0.5); /* Focus effect */
+  border-color: #5bc088; /* Border color on focus */
+}
+
+/* Button styles */
+.btn {
+  border-radius: 5px; /* Rounded corners for buttons */
+  border: 2px solid #5bc088; /* Green border color */
+}
+
+.btn-success {
+  margin-left: 10px; /* Space between search and logout buttons */
+  background-color: #5BC088; /* Logout button color */
+  color: white; /* Text color for the logout button */
+}
+
+.btn-success:hover {
+  background-color: rgba(91, 192, 136, 0.5); /* Change background on hover */
+  color: white; /* Maintain text color on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 20%; /* Increase sidebar width */
+  background-color: #F0FAF0; /* Match header background color */
+  padding: 20px; /* Add padding */
+  height: calc(100vh - 80px); /* Full height from header to footer */
+  position: fixed; /* Fix position to the left */
+  top: 80px; /* Align below the header */
+  left: 0; /* Align to the left edge */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.sidebar .list-group-item {
+  font-size: 0.8rem; /* Adjust this value to make the text smaller */
+  padding: 5px 10px; /* Optional: Adjust padding for a more compact look */
+}
+
+.list-group-item {
+  transition: background-color 0.3s; /* Smooth transition for hover */
+  border: none; /* Remove default border */
+  margin-bottom: 10px; /* Add spacing between items */
+}
+
+.list-group-item.active {
+  background-color: #5bc088; /* Green background for active link */
+}
+
+.list-group-item.active a {
+  color: white; /* White text for active link */
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef; /* Light gray on hover */
+}
+
+.list-group-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  display: flex; /* Align icon and text */
+  align-items: center; /* Center items vertically */
+}
+
+.list-group-item a:hover {
+  color: #5bc088; /* Change link color on hover */
+}
+
+/* Card styles */
+.card {
+  margin-top: 20px; /* Space between cards */
+  background-color: #c8e6c9; /* Light background color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.card-body {
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center content */
+}
+
+/* Hover effect for cards */
+.hover-card:hover {
+  background-color: #c8e6c9; /* Light green background on hover */
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Upcoming Transplants Section */
+.hover-card {
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Progress bar styles */
+.progress {
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #5bc088;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Footer styles */
+.footer {
+  display: flex; /* Use Flexbox layout */
+  justify-content: space-between; /* Space items between left and right */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Adjust padding for spacing */
+   /* Highlight with white color */
+  border-top: 0px solid #5bc088; /* Optional: Add a green top border */
+  position: absolute; /* Keep footer at the bottom of the page */
+  width: calc(100% - 20%); /* Full width minus sidebar width (15%) */
+  left: 20%; /* Align to the right of the sidebar */
+  bottom: 0; /* Align to the bottom edge */
+}
+.footer span {
+  font-size: 0.8rem; /* Adjust font size for footer text */
+}
+
+/* Main content area styles */
+.col-md-9 {
+  margin-left: 25%; /* Match the width of the sidebar */
+  padding-left: 20px; /* Add padding to create space between sidebar and content */
+  padding-top: 20px; /* Add padding at the top for better alignment */
+  padding-bottom: 60px; /* Ensure space above the footer */
+}
+
+/* Match Score Distribution styles */
+.match-score-distribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid #5bc088;
+}
+
+.bar {
+  width: 10%;
+  background-color: #5bc088;
+  margin: 0 5px;
+}
+
+/* Border bottom styles */
+.border-bottom {
+  border-bottom: 2px solid #5bc088; /* Green border color */
+  margin: 10px 0; /* Spacing above and below the border */
+}
